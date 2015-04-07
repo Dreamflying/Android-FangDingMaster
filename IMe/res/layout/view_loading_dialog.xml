@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/dialog_view" 
+	android:orientation="vertical"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:padding="10dp"
+	android:background="#00000000"
+	>
+	<ImageView 
+		android:id="@+id/img"
+		android:src="@drawable/new_loading"
+		android:layout_width="50dip" 
+		android:layout_height="50dip" 
+		/>
+	<TextView 
+	    android:id="@+id/tipTextView"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		 />
+</LinearLayout>

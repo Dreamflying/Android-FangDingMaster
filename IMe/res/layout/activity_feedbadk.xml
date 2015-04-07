@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title_public" />
+
+    <EditText
+        android:id="@+id/feelback_content_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/yuanjiao"
+        android:ems="10"
+        android:gravity="left|top"
+        android:hint="请输入您的反馈，我们将及时改进……"
+        android:inputType="textMultiLine"
+        android:minLines="10"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingTop="10sp"
+        android:textColor="#696969"
+        android:textSize="15sp" >
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/feelback_message_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/yuanjiao"
+             android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="请留下您的联系方式，如邮箱、手机号"
+            android:maxLength="25"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:textColor="#696969"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/feelback_putin_btn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/feelback_putin_btn"
+            android:text="提交"
+            android:textSize="16sp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

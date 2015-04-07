@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg"
+    tools:context=".RegisterActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:id="@+id/nodid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <RelativeLayout
+                    android:id="@+id/home_title_logo_img"
+                    android:layout_width="220dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" >
+
+                    <ImageView
+                    	android:layout_width="120dp"
+                    	android:scaleType="fitCenter"
+                    	android:layout_height="120dp"
+                    	android:layout_alignParentTop="true"
+                    	android:layout_centerHorizontal="true"
+                    	android:src="@drawable/new_login_logo"
+                    	android:id="@+id/logo_s"/>
+                
+                	<TextView 
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="40dp"
+                    	android:text="想要?  告诉我!"
+                    	android:layout_below="@+id/logo_s"
+                    	android:layout_marginTop="30dp"
+                    	android:textSize="20sp"
+                    	android:textColor="#FFFFFF"
+                    	android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/register_phone_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignLeft="@+id/home_title_logo_img"
+                    android:layout_alignRight="@+id/home_title_logo_img"
+                    android:layout_below="@+id/home_title_logo_img"
+                    android:background="@drawable/login_edittext_bg"
+                    android:digits="1234567890@_.qazwsxedcrfvtgbyhnujmiklopQAZWSXEDCRFVTGBYHNUJMIKLOP"
+                    android:ems="11"
+                    android:hint="请输入手机号码"
+                    android:maxLength="11"
+                     android:textSize="15sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#ffffff" >
+                </EditText>
+                <!-- android:digits="1234567890@_.qazwsxedcrfvtgbyhnujmiklop" -->
+
+               
+
+                <EditText
+                    android:id="@+id/register_password_one_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignLeft="@+id/register_name_edit"
+                    android:layout_alignRight="@+id/register_name_edit"
+                    android:layout_below="@+id/register_phone_edit"
+                    android:background="@drawable/login_edittext_bg"
+                    android:ems="10"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                     android:textSize="15sp"
+                    android:maxLength="14"
+                    android:paddingLeft="10dp"
+                    android:textColor="#ffffff" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/register_password_two_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignLeft="@+id/register_password_one_btn"
+                    android:layout_alignRight="@+id/register_password_one_btn"
+                    android:layout_below="@+id/register_password_one_btn"
+                    android:background="@drawable/login_edittext_bg"
+                    android:ems="10"
+                    android:hint="请确认密码"
+                    android:inputType="textPassword"
+                     android:textSize="15sp"
+                    android:maxLength="14"
+                    android:paddingLeft="10dp"
+                    android:textColor="#ffffff" >
+                </EditText>
+
+ 				<EditText
+                    android:id="@+id/register_name_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignLeft="@+id/register_phone_edit"
+                    android:layout_alignRight="@+id/register_phone_edit"
+                    android:layout_below="@+id/register_password_two_btn"
+                    android:background="@drawable/login_edittext_bg"
+                    android:hint="请输入昵称"
+                    android:maxLength="12"
+                    android:textSize="15sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#ffffff" >
+                </EditText>
+                <EditText
+                    android:id="@+id/register_name_ido"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignLeft="@+id/register_phone_edit"
+                    android:layout_alignRight="@+id/register_phone_edit"
+                    android:layout_below="@+id/register_name_edit"
+                    android:background="@drawable/login_edittext_bg"
+                    android:hint="一句话介绍你自己"
+                     android:textSize="15sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#ffffff" >
+                </EditText>
+                
+                <RadioGroup
+                    android:id="@+id/register_sexchoose_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/register_name_ido"
+                    android:layout_alignRight="@+id/register_name_ido"
+                    android:layout_below="@+id/register_name_ido"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center" >
+
+                    <RadioButton
+                        android:id="@+id/register_nan_btn"
+                        android:layout_width="80dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="5dp"
+                        android:checked="true"
+                        android:button="@null"
+                        android:background="@drawable/register_sex_nan_bg" />
+
+                    <RadioButton
+                        android:id="@+id/register_nv_btn"
+                        android:layout_width="80dp"
+                        android:layout_height="36dp"
+                       android:layout_gravity="left"
+                         android:layout_marginLeft="5dp"
+                          android:button="@null"
+                        android:background="@drawable/register_sex_nv_bg" />
+                </RadioGroup>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/register_sexchoose_rl"
+                     android:layout_alignLeft="@+id/register_sexchoose_rl"
+                    android:layout_alignRight="@+id/register_sexchoose_rl"
+                    android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                    android:background="@drawable/register_line" />
+
+                <Button
+                    android:id="@+id/register_success_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/register_sexchoose_rl"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/register_success_btn_bg" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

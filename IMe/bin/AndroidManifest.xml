@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.iwant"
+    android:installLocation="auto"
+    android:versionCode="5"
+    android:versionName="1.0.4" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+    <!-- 地理位置GPS -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>  
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name="com.project.iwant.IMeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/new_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+
+        <activity
+        android:name="com.project.iwant.SplashActivity"
+            android:label="@string/app_name"
+               android:windowSoftInputMode="adjustResize"
+                          android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 百度定位 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="mFU7w1nmT5Cc3sddPwZY3mNB" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <!-- 登录界面 -->
+
+        <activity
+            android:name="com.project.login_view.RegisterActivity"
+             android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.login_view.ModifyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+           <activity
+            android:name="com.project.login_view.ModifyUserInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.project.login_view.UpLoadHeadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+ 
+  <activity
+            android:name="com.project.login_view.LoginActivity"
+              android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"></activity>
+        <!-- 主界面 -->
+     
+         <activity
+            android:name="com.project.iwant.EveryDayDisplayActivity"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+        </activity> 
+        <activity
+            android:name="com.project.iwant.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.iwant.SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.iwant.SetActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.iwant.AboutUsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.iwant.AboutUsLowerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.iwant.FeedBackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--add  -->
+        
+           <activity
+            android:name="com.project.add_view.NewSearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.add_view.AddActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.add_view.PhotoAlbumActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.add_view.PhotoWallActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.add_view.NewAddActivity"
+            android:windowSoftInputMode="adjustResize" 
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 消息 -->
+        <activity
+            android:name="com.project.message_view.MessageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.project.message_view.CommentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.message_view.CommentDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人资料 -->
+          <activity
+            android:name="com.project.myself_view.A_BookActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.myself_view.ContactsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.myself_view.FriendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.project.myself_view.NewCommentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.project.myself_view.NearbyActivity"
+            android:screenOrientation="portrait"
+           >
+        </activity>
+        <activity
+            android:name="com.project.myself_view.MyselfInfoActivity"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name="com.project.myself_view.PicDisplayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.myself_view.PublishActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.myself_view.ChoicePicActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.myself_view.ImageGridActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.myself_view.ApplyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.project.iwant_or_ihave_view.IwantAndIhaveManageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Service 聊天服务 -->
+        <service
+            android:name="com.utils.chat.NewChatService"
+            android:enabled="true" >
+        </service>
+       <meta-data android:name="APP_ID" android:value="e63940a243bd0fc63f8689ef1344da2c" />
+        <meta-data android:name="APP_PID" android:value="default" /> 
+        <!--第三方  -->
+        
+<!--          新加Activity 2014-12-2  -->
+        <activity
+            android:name="com.project.iwant.NewMainTabActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" />  
+        
+       <!-- 第三方聊天  --> 
+              <activity
+            android:name="com.open_demo.main.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+          <activity
+            android:name="com.open_demo.LoginPage"
+             >
+        </activity>
+        <activity
+            android:name="com.open_demo.activity.CreateGroupSelectUser"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.open_demo.activity.GroupRoomListPage"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.open_demo.activity.GroupInfoPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.open_demo.activity.UserInfoPage"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.open_demo.activity.RoomInfoPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.open_demo.activity.ChatPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.open_demo.activity.SearchPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.open_demo.activity.NotifyListPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.open_demo.activity.ShowBigImage"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+
+        <receiver android:name="com.open_demo.StartServiceReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.open_demo.GotyeService" />
+        
+    </application>
+
+</manifest>

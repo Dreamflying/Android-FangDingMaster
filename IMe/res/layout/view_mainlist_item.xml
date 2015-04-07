@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_iwant_iteam_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekRL"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="15sp"
+            android:layout_height="15sp"
+            android:src="@drawable/add_adress_img" />
+
+        <TextView
+            android:id="@+id/home_iwant_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView4"
+            android:text="0.48km"
+            android:textColor="#28ab66"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/imageView4"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/new_time" />
+
+        <TextView
+            android:id="@+id/home_iwant_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView4"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/imageView5"
+            android:text="00:15"
+            android:textColor="#28ab66"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/home_iwant_list_itean_head_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/logo_logo" />
+
+        <TextView
+            android:id="@+id/home_iwant_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/home_iwant_list_itean_head_img"
+            android:text="萧涵"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+     
+<ImageView
+            android:id="@+id/sex_image"
+            android:layout_width="14dip"
+            android:layout_height="14dip"
+             android:layout_marginTop="2dip"
+             android:layout_marginLeft="10dip"
+            android:layout_below="@+id/home_iwant_name_tv"
+              android:layout_toRightOf="@id/home_iwant_list_itean_head_img"
+            android:src="@drawable/new_sex_man"
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/home_iwant_property_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_iwant_name_tv"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="2dip"
+            android:layout_toRightOf="@id/home_iwant_list_itean_head_img"
+            android:background="#00000000"
+            android:padding="1dp"
+            android:text="女汉子女流氓"
+            android:textColor="#949494"
+            android:textSize="12sp" />
+   
+        <TextView
+            android:id="@+id/home_iwant_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/home_iwant_list_itean_head_img"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:text="我最近想买一个自行车，周六周末的时候骑着单车四处走走玩玩，所以想买一个价格适中的二手的山地车。"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/zanRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/relativeLayout1" >
+          <ImageView
+                android:id="@+id/image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="1dip"
+                android:scaleType="centerCrop" />
+
+            <TableLayout
+                android:id="@+id/image_list_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="1dip"
+                         android:scaleType="centerCrop"
+                           />
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="1dip"
+                        android:scaleType="centerCrop"
+                          />
+                     <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="1dip"
+                        android:scaleType="centerCrop"
+                          />
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="1dip"
+                     android:scaleType="centerCrop"
+                          />
+
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:layout_margin="1dip"
+                         android:layout_width="80dp"
+                        android:layout_height="80dp"
+                       android:scaleType="centerCrop"
+                          />
+                     <ImageView
+                        android:id="@+id/image6"
+                        android:layout_margin="1dip"
+                         android:layout_width="80dp"
+                        android:layout_height="80dp"
+                       android:scaleType="centerCrop"
+                          />
+                </TableRow>
+                 <TableRow>
+
+                    <ImageView
+                        android:id="@+id/image7"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="1dip"
+                     android:scaleType="centerCrop"
+                          />
+
+                    <ImageView
+                        android:id="@+id/image8"
+                        android:layout_margin="1dip"
+                         android:layout_width="80dp"
+                        android:layout_height="80dp"
+                       android:scaleType="centerCrop"
+                          />
+                     <ImageView
+                        android:id="@+id/image9"
+                        android:layout_margin="1dip"
+                         android:layout_width="80dp"
+                        android:layout_height="80dp"
+                       android:scaleType="centerCrop"
+                          />
+                </TableRow>
+            </TableLayout>
+
+        <GridView
+            android:id="@+id/imagelistGridView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dip"
+            android:gravity="center"
+            android:horizontalSpacing="1dp"
+            android:listSelector="@null"
+            android:scrollbars="none"
+            android:visibility="gone"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp" />
+        
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/seekRL"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/zanRL" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/new_home_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/new_talk"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_liaoliao_click"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:focusable="false"
+                         android:enabled="false"
+                          android:clickable="false"
+                        android:src="@drawable/new_talk" />
+
+                    <Button
+                        android:id="@+id/message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dip"
+                        android:background="#00000000"
+                        android:text="聊聊"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/new_vertical_diliver" />
+
+                <LinearLayout
+                    android:id="@+id/new_ignore"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_liaoliao_click"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                         android:focusable="false"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:src="@drawable/new_ignore" />
+
+                    <Button
+                        android:id="@+id/comment"
+                        android:layout_width="25dip"
+                        android:layout_height="20dip"
+                        android:background="#00000000"
+                        android:text="哦"
+                         android:focusable="false"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

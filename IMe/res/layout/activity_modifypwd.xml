@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg" >
+
+    <!-- 修改密码 -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/modifypwd_logo_img"
+                android:layout_width="220dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo_s" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/modifypwd_oldpwd_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_alignLeft="@+id/modifypwd_logo_img"
+                android:layout_alignRight="@+id/modifypwd_logo_img"
+                android:layout_below="@+id/modifypwd_logo_img"
+                android:background="@drawable/login_edittext_bg"
+                android:digits="1234567890@_.qazwsxedcrfvtgbyhnujmiklop"
+                android:ems="11"
+                android:inputType="textPassword"
+                android:hint="请输入旧密码"
+                android:maxLength="11"
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff" >
+            </EditText>
+            <!-- android:digits="1234567890@_.qazwsxedcrfvtgbyhnujmiklop" -->
+
+            <EditText
+                android:id="@+id/modifypwd_password_one_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_alignLeft="@+id/modifypwd_oldpwd_edit"
+                android:layout_alignRight="@+id/modifypwd_oldpwd_edit"
+                android:layout_below="@+id/modifypwd_oldpwd_edit"
+                android:background="@drawable/login_edittext_bg"
+                android:digits="1234567890@_.qazwsxedcrfvtgbyhnujmiklop"
+                android:ems="10"
+                android:hint="请输入新密码"
+                android:inputType="textPassword"
+                android:maxLength="14"
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/modifypwd_password_two_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_alignLeft="@+id/modifypwd_password_one_btn"
+                android:layout_alignRight="@+id/modifypwd_password_one_btn"
+                android:layout_below="@+id/modifypwd_password_one_btn"
+                android:background="@drawable/login_edittext_bg"
+                android:digits="1234567890@_.qazwsxedcrfvtgbyhnujmiklop"
+                android:ems="10"
+                android:hint="请确认密码"
+                android:inputType="textPassword"
+                android:maxLength="14"
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_below="@+id/modifypwd_password_two_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right" >
+
+                    <Button
+                        android:id="@+id/modifypwd_success_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/home_iteam_manzu_btn"
+                        android:gravity="center"
+                        android:text="确定"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="left" >
+
+                    <Button
+                        android:id="@+id/modifypwd_success_btn1"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/home_iteam_liaoliao_btn"
+                        android:gravity="center"
+                        android:text="取消"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

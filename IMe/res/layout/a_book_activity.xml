@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="@drawable/new_bg"
+	android:orientation="vertical">
+	
+   <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/new_title" >
+
+        <LinearLayout
+            android:id="@+id/setup_return_btns"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/back_bttt_yellow"
+                android:gravity="center_vertical" />
+
+            <ImageView
+                android:id="@+id/add__title_logo_img"
+                 android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/logo_s" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<ExpandableListView 
+		    android:layout_width="fill_parent"
+			android:layout_height="fill_parent" 
+			android:id="@+id/elist"
+			android:layout_alignParentTop="true" 
+			android:layout_alignParentLeft="true"
+			android:groupIndicator="@null"
+			android:divider="@drawable/new_home_divider"
+			android:background="@drawable/new_bg"
+			android:scrollbars="none"/>
+
+		<com.utils.widght.A_Book_AssortView
+			android:layout_width="30dip" 
+			android:layout_height="fill_parent"
+			android:layout_alignParentTop="true" 
+			android:layout_alignParentRight="true"
+			android:id="@+id/assort"
+			android:background="#00000000" />
+	</RelativeLayout>
+</LinearLayout>

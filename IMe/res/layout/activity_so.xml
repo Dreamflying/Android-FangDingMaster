@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_background" >
+
+    <RelativeLayout
+        android:id="@+id/so_title_rly"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <LinearLayout
+            android:id="@+id/so_title_return_btns"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/back_bttt_yellow"
+                android:gravity="center_vertical" />
+
+            <ImageView
+                android:id="@+id/so_title_logo_img"
+                android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/logo_s" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/so_butt"
+            android:layout_width="32dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/title_sousuo_false"
+            android:paddingRight="10dp" />
+
+        <EditText
+            android:id="@+id/so_edit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/so_butt"
+            android:layout_toRightOf="@id/so_title_return_btns"
+            android:background="@drawable/so_edit_bg"
+            android:ems="10"
+            android:hint="找您想要的……"
+            android:paddingLeft="5sp"
+            android:textColor="#b5b45a"
+            android:textColorHint="#b5b45a"
+            android:textSize="15sp" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <com.utils.widght.MainListView
+        android:id="@+id/so_result_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/so_title_rly"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:divider="@drawable/list_divider_line"
+        android:dividerHeight="1px"
+        android:scrollbars="none" >
+    </com.utils.widght.MainListView>
+
+</RelativeLayout>

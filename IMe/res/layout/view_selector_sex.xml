@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_more_ppw_rly"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/tnull"
+        android:layout_width="110dp"
+        android:layout_height="160dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:background="#00000000" >
+
+        <!-- 通讯录 -->
+
+        <LinearLayout
+            android:id="@+id/one"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/select_first"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sex_man"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="男"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff" >
+            </View>
+
+            <TextView
+                android:id="@+id/sex_woman"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="女"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/one"
+            android:background="@drawable/new_vertical_diliver" >
+        </View>
+
+        <LinearLayout
+            android:id="@+id/two"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@id/divider"
+            android:background="@drawable/select_two"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/new_select_time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="按时间"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider_2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/two"
+            android:background="@drawable/new_vertical_diliver" >
+        </View>
+
+        <LinearLayout
+            android:id="@+id/three"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@id/divider_2"
+            android:background="@drawable/select_two"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/new_select_distance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="按距离"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

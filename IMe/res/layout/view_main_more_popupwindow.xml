@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_more_ppw_rly"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/tnull"
+        android:layout_width="150dp"
+        android:layout_height="210dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/popupwindow_biankuang" >
+
+        <RelativeLayout
+            android:id="@+id/home_more_ppw_my_rly"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/friend_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/logo_s" />
+
+            <TextView
+                android:id="@+id/popupwindow_username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/friend_img"
+                android:text="萧涵"
+                android:textColor="#727171" />
+        </RelativeLayout>
+
+        <!-- 通讯录 -->
+ 
+        <Button
+            android:id="@+id/home_more_ppw_adls_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/home_more_ppw_my_rly"
+            android:background="@drawable/home_more_addresslist_bg" />
+
+         <Button
+            android:id="@+id/home_more_ppw_contentmanage_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/home_more_ppw_setup_btn"
+            android:background="@drawable/deleteicon" />
+
+        <Button
+            android:id="@+id/home_more_ppw_feelback_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/home_more_ppw_contentmanage_btn"
+            android:background="@drawable/home_more_feelback_bg" />
+
+        <Button
+            android:id="@+id/home_more_ppw_quit_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/home_more_ppw_feelback_btn"
+            android:background="@drawable/home_more_quit_bg" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#aaaaaa" />
+    </RelativeLayout>
+
+</RelativeLayout>

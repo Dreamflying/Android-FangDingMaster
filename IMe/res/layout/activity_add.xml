@@ -1,0 +1,294 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/add__title_back_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#171613" >
+
+        <LinearLayout
+            android:id="@+id/add__title_back_ll"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/back_bttt_yellow"
+                android:gravity="center_vertical" />
+
+            <ImageView
+                android:id="@+id/add__title_logo_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/logo_s" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/add__name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/add__title_back_ll"
+            android:text="发帖"
+            android:textColor="#dfde95"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/add_ok_btn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/fabu_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add__hot_types_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/add__title_back_rl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_top_false" >
+
+        <TextView
+            android:id="@+id/add__hot_types"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="愿望分类：" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/add__hot_types"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <CheckBox
+                    android:id="@+id/add_iwant_cb"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/add_iwant_cb_bg"
+                    android:button="@null"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <CheckBox
+                    android:id="@+id/add_ihave_cb"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/add_ihave_cb_bg"
+                    android:button="@null"
+                    android:checked="false" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add__hot_types_rl2"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/add__hot_types_rl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_bottom_false" >
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="期待人数：" />
+
+        <TextView
+            android:id="@+id/add_people_current_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView22"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/textView22"
+            android:text="0" />
+
+        <SeekBar
+            android:id="@+id/add_people_num_sb"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/add_people_current_num"
+            android:max="5"
+            android:maxHeight="3px"
+            android:minHeight="3px"
+            android:thumbOffset="0px" />
+
+        <TextView
+            android:id="@+id/add_people_current_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/add_people_current_num"
+            android:layout_alignBottom="@+id/add_people_current_num"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/add_people_num_sb"
+            android:text="5" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/add_new_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:layout_alignLeft="@+id/add__hot_types_rl2"
+        android:layout_alignRight="@+id/add__hot_types_rl2"
+        android:layout_below="@+id/add__hot_types_rl"
+         android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/message_edit_bg"
+        android:ems="10"
+        android:gravity="left|top"
+        android:hint="说说你的愿望吧……"
+        android:maxLength="50"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingTop="10sp"
+        android:textColor="#696969"
+        android:textSize="18sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <!-- 热门愿望，暂时隐藏 -->
+
+    <TextView
+        android:id="@+id/add_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_new_tv"
+        android:layout_below="@+id/add_new_tv"
+        android:layout_marginTop="5sp"
+        android:text="热门愿望"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/add_linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_tv"
+        android:layout_alignRight="@+id/add_new_tv"
+        android:layout_below="@+id/add_tv"
+        android:layout_marginTop="5sp" >
+
+        <Button
+            android:id="@+id/add_btt_ktv1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_topleft_btn_bg"
+            android:text="钱柜KTV"
+            android:textColor="#35b5e5"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/add_btt_ktv2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_topright_btn_bg"
+            android:text="秀玉红茶坊"
+            android:textColor="#35b5e5"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_linearLayout1"
+        android:layout_alignRight="@+id/add_linearLayout1"
+        android:layout_below="@+id/add_linearLayout1" >
+
+        <Button
+            android:id="@+id/add_btt_ktv3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_bottomleft_btn_bg"
+            android:text="欢乐谷"
+            android:textColor="#35b5e5"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/add_btt_ktv4"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_not_btn_bg"
+            android:text="金汉斯"
+            android:textColor="#35b5e5"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/add_btt_ktv5"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_bottomright_btn_bg"
+            android:text="自助餐"
+            android:textColor="#35b5e5"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add_address_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add_new_tv"
+        android:layout_alignRight="@+id/add_new_tv"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:text=""
+        android:textColor="#28ab66"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/add_address_img"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignBottom="@+id/add_new_tv"
+        android:layout_toLeftOf="@+id/add_address_tv"
+        android:src="@drawable/add_adress_img" />
+
+</RelativeLayout>

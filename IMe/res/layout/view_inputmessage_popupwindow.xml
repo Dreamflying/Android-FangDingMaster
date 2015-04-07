@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:gravity="center_horizontal"  
+     android:layout_alignParentBottom="true"  
+    android:orientation="vertical"  
+  >
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout 
+     android:id="@+id/pop_layout"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:gravity="center_horizontal" 
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/import_message_rly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:minHeight="40dp"
+        android:padding="6dip" >
+
+        <EditText
+            android:id="@+id/message_content_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/message_send_btn"
+            android:background="#00000000"
+            android:drawableBottom="@drawable/comment_edittext"
+            android:ems="10"
+            android:hint="说点啥"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:minHeight="30dp"
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/message_send_btn"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/home_iteam_liaoliao_btn"
+            android:text="评论"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+       <!--  <Button
+            android:id="@+id/message_face_btn1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/xiaolian" /> -->
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager1"
+        android:layout_width="wrap_content"
+        android:layout_height="150dip"
+        android:background="#e8eaf1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_expression"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_id"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ll_vp_selected_index"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

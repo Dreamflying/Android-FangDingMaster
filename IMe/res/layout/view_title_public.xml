@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+     android:background="@drawable/new_title" >
+
+    <LinearLayout
+        android:id="@+id/setup_return_btns"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:focusable="false"
+                android:enabled="false"
+                android:clickable="false"
+            android:background="@drawable/back_bttt_yellow"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/add__title_logo_img"
+           android:layout_width="22dp"
+           android:focusable="false"
+                android:enabled="false"
+                android:clickable="false"
+            android:layout_height="33dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/logo_s" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/so_iteam_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/setup_return_btns"
+        android:text="设置"
+        android:textColor="#dfde95"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:background="@drawable/save" />
+
+</RelativeLayout>

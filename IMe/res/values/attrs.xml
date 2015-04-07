@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Dmitriy Zaitsev on 11/08/2011 -->
+<resources>
+    <declare-styleable name="RoundImageView">
+        <attr name="rectRadiusX" format="dimension" />
+        <attr name="rectRadiusY" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent">
+	
+	<RelativeLayout 
+	    android:id="@+id/click_contacts"
+	    android:layout_width="match_parent"
+		android:layout_height="60dp" 
+		android:gravity="center_vertical">
+
+		<RelativeLayout 
+		    android:layout_width="55dp"
+			android:layout_height="60dp" 
+			android:id="@+id/head_layout">
+			<ImageView 
+			    android:id="@+id/head_img" 
+			    android:layout_width="55dp"
+				android:layout_height="55dp" 
+				android:focusable="false"
+				android:clickable="false"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true" 
+				android:paddingLeft="5dp"
+				 />
+
+		</RelativeLayout>
+
+		<TextView 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_toRightOf="@id/head_layout"
+			android:textColor="#FFFFFF" 
+			android:layout_centerVertical="true"
+			android:textSize="20sp" 
+			android:id="@+id/name"
+			android:focusable="false"
+				android:clickable="false"
+				android:enabled="false"
+			android:text="阿蓝"
+			android:layout_marginLeft="20dp"/>
+	
+	</RelativeLayout>
+</LinearLayout>
+
+

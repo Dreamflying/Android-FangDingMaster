@@ -1,0 +1,282 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/new_bg">
+    
+        
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/new_home_divider"
+        android:id="@+id/view"/>
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:id="@+id/L1"
+        android:background="@drawable/new_pic_info">
+        
+        <ImageView 
+            android:scaleType="fitCenter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/info_img"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"/>
+        
+        <LinearLayout 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	android:layout_marginLeft="20dp"
+        	android:layout_gravity="center_horizontal">
+        	<TextView 
+        	    android:id="@+id/currentUserNickName"
+           		android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:text=""
+            	android:textColor="#FFFFFF"
+            	android:textSize="25sp"
+            	android:layout_marginBottom="5dp"
+            	android:layout_marginTop="15dp"/>
+        	<TextView 
+        	    android:id="@+id/currentUserIdo"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:text="你能拿我怎么样"
+            	android:textColor="#DCDCDC"
+            	android:textSize="10sp"
+            />
+        </LinearLayout>
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:gravity="center_vertical">
+            
+            <ImageView 
+           		android:src="@drawable/new_in_info"
+            	android:scaleType="fitCenter"
+            	android:layout_width="80dp"
+            	android:layout_height="60dp"
+            	android:layout_alignParentRight="true"
+            	android:layout_centerVertical="true"
+            	android:paddingRight="20dp"
+            	android:id="@+id/info_jiantou"
+            	android:focusable="false"
+            	android:clickable="false"/>
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <View 
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="@drawable/new_home_divider"
+             android:id="@+id/view_0"/>
+        <LinearLayout 
+            android:id="@+id/new_myfriends"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+             android:background="@drawable/select_liaoliao_click"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+        	
+            <ImageView 
+            	android:src="@drawable/new_address_book"
+            	android:scaleType="fitCenter"
+            	android:layout_width="30dp"
+            	android:layout_height="30dp"
+            	android:layout_marginLeft="20dp"
+            	android:layout_gravity="center"
+            	android:clickable="false"
+            	android:focusable="false"
+            	android:layout_marginRight="15dp"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通讯录"
+                android:textColor="#f0f2c3"
+            	android:textSize="15sp"
+            	android:layout_margin="10dp"
+            	android:clickable="false"
+            	android:focusable="false"
+            	android:layout_marginLeft="80dp"/>
+            
+           
+        </LinearLayout>
+        <View 
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="@drawable/new_home_divider"
+             android:id="@+id/view_1"/>
+        
+        <LinearLayout 
+            android:id="@+id/new_myrelease"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+             android:background="@drawable/select_liaoliao_click"
+            android:gravity="center_vertical">
+            
+            <ImageView 
+            	android:src="@drawable/new_my_release"
+            	android:scaleType="fitCenter"
+            	android:layout_width="30dp"
+            	android:layout_height="30dp"
+            	android:layout_marginLeft="20dp"
+            	android:layout_gravity="center"
+            	android:clickable="false"
+            	android:focusable="false"
+            	android:layout_marginRight="15dp"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的发布"
+                android:textColor="#f0f2c3"
+            	android:textSize="15sp"
+            	android:layout_margin="10dp"
+            	android:clickable="false"
+            	android:focusable="false"
+            	android:layout_marginLeft="80dp"/>
+                      
+        </LinearLayout>
+        <View 
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="@drawable/new_home_divider"
+             android:id="@+id/view_2"/>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+             android:background="@drawable/select_liaoliao_click"
+            android:id="@+id/new_myneighbor"
+            android:gravity="center_vertical">
+            
+            <ImageView 
+            	android:src="@drawable/new_neighbor"
+            	android:scaleType="fitCenter"
+            	android:layout_width="30dp"
+            	android:layout_height="30dp"
+            	android:layout_marginLeft="20dp"
+            	android:layout_gravity="center"
+            	android:clickable="true"
+            	android:layout_marginRight="15dp"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隔壁"
+                android:textColor="#f0f2c3"
+            	android:textSize="15sp"
+            	android:layout_margin="10dp"
+            	android:clickable="false"
+            	android:focusable="false"
+            	android:layout_marginLeft="80dp"/>
+                      
+        </LinearLayout>
+        
+        <View 
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="@drawable/new_home_divider"
+             android:id="@+id/view_3"/>
+                
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="@drawable/select_liaoliao_click"
+            android:id="@+id/new_share"
+            android:gravity="center_vertical"
+            >
+            
+            <ImageView 
+            	android:src="@drawable/new_neighbor"
+            	android:scaleType="fitCenter"
+            	android:layout_width="30dp"
+            	android:layout_height="30dp"
+            	android:layout_marginLeft="20dp"
+            	android:layout_gravity="center"
+            	android:clickable="false"
+            	android:focusable="false"
+            	android:layout_marginRight="15dp"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享给好友"
+                android:textColor="#f0f2c3"
+            	android:textSize="15sp"
+            	android:layout_margin="10dp"
+               android:clickable="false"
+            	android:focusable="false"
+            	android:layout_marginLeft="80dp"/>
+                      
+        </LinearLayout>
+        
+        <View 
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="@drawable/new_home_divider"
+             android:id="@+id/view_5"/>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="@drawable/select_liaoliao_click"
+            android:id="@+id/new_mysetting"
+            android:gravity="center_vertical"
+            >
+            
+            <ImageView 
+            	android:src="@drawable/new_settings"
+            	android:scaleType="fitCenter"
+            	android:layout_width="30dp"
+            	android:layout_height="30dp"
+            	android:layout_marginLeft="20dp"
+            	android:layout_gravity="center"
+            	android:clickable="false"
+            	android:focusable="false"
+            	android:layout_marginRight="15dp"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textColor="#f0f2c3"
+            	android:textSize="15sp"
+            	android:layout_margin="10dp"
+            android:clickable="false"
+            	android:focusable="false"
+            	android:layout_marginLeft="80dp"/>
+                      
+        </LinearLayout>
+        
+        <View 
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="@drawable/new_home_divider"
+             android:id="@+id/view_4"/>
+    </LinearLayout>
+   
+</LinearLayout>

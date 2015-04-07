@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="75dip"
+    android:layout_height="75dip" >
+
+    <ImageView
+        android:id="@+id/dynamic_publish_gv_img"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dip"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@+id/dynamic_publish_gv_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/dynamic_publish_delete_img" />
+
+</RelativeLayout>

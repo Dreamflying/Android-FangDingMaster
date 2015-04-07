@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 申请 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_iwant_iteam_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_white_for_gainsboro"
+    android:padding="10dp" >
+
+    <!-- android:background="@drawable/gold_biankuang" -->
+
+    <RelativeLayout
+        android:id="@+id/home_my_sq_item_head_rl"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:padding="4dp" >
+
+        <ImageView
+            android:id="@+id/home_my_sq_item_head_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+           />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/home_my_sq_item_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@id/home_my_sq_item_head_rl"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/home_iteam_liaoliao_btn"
+        android:text="X"
+        android:textColor="@color/white"
+		android:visibility="invisible"
+		android:clickable="false"
+/>
+
+    <RelativeLayout
+        android:id="@+id/home_my_sq_item_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home_my_sq_item_head_rl"
+        android:layout_marginLeft="10dip"
+        android:layout_marginBottom="10dip"
+        android:layout_toLeftOf="@id/home_my_sq_item_delete"
+        android:layout_toRightOf="@+id/home_my_sq_item_head_rl" >
+
+        <TextView
+            android:id="@+id/home_my_sq_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="萧涵"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/home_my_sq_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/home_my_sq_item_name"
+            android:layout_marginTop="3dp"
+            android:text="我最近想买一个自行车，周六周末的时候骑着单车四处走走玩玩，所以想买一个价格适中的二手的山地车。"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_my_sq_item_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@id/home_my_sq_item_rl"
+        android:layout_marginLeft="10dp"
+            android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/apply_bg_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="43dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/home_my_sq_item_tallk"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/home_iteam_liaoliao_btn"
+                android:gravity="center"
+                android:text="聊聊"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/home_my_sq_item_iwant"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:background="@drawable/home_iteam_manzu_btn"
+                android:text="批阅"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_list_item_rlsb"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:minHeight="80dp"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/my_list_item__head_rl"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/my_list_item_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+           />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/my_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/my_list_item__head_rl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/my_list_item__head_rl"
+        android:text="testname"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+   
+
+    <Button
+        android:id="@+id/comment_send"
+        android:layout_width="40dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/new_ask"
+        android:text="回复"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        />
+
+    <ImageView 
+        android:id="@+id/time"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignLeft="@id/my_list_item_name"
+        android:layout_below="@id/my_list_item_name"
+        android:src="@drawable/new_time"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/my_list_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/time"
+        android:layout_below="@id/my_list_item_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="晚上19:20"
+        android:textSize="13sp" />
+    
+    
+     <TextView
+        android:id="@+id/my_list_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_list_item__head_rl"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/home_my_liaoliao_text"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="评论的内容"
+        android:layout_marginBottom="12dp"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/home_my_liaoliao_text"
+        android:layout_width="18dip"
+        android:layout_height="18dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/my_list_item_name"
+        android:background="@drawable/filled_circle"
+        android:gravity="center"
+        android:text="25"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:layout_below="@id/my_list_item_content"
+        android:id="@+id/myself"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/new_comment_bg" 
+        >
+         <RelativeLayout
+        android:id="@+id/my_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+          android:layout_centerInParent="true"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/my_head_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+          <TextView
+        android:id="@+id/my_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/my_head"
+        android:text="testname"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+         <TextView
+        android:id="@+id/my_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_username"
+        android:layout_toRightOf="@id/my_head"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+         android:layout_marginLeft="10dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+         
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_iwant_iteam_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="#00000000"
+    android:padding="10dp" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/home_iwant_list_itean_head_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/logo_logo" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekRL"
+          android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="15sp"
+            android:layout_height="15sp"
+            android:src="@drawable/add_adress_img" />
+
+        <TextView
+            android:id="@+id/home_iwant_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView4"
+            android:text="0.48km"
+            android:textColor="#28ab66"
+            android:textSize="11sp" />
+            <TextView
+            android:id="@+id/home_iwant_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView4"
+            android:text="AM 00:15"
+            android:layout_marginLeft="3dp"
+            android:textColor="#28ab66"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home_iwant_list_itean_head_img"
+        android:layout_marginLeft="6dp"
+        android:layout_toLeftOf="@+id/home_iwant_item_zan"
+        android:layout_toRightOf="@+id/home_iwant_list_itean_head_img" >
+
+        <TextView
+            android:id="@+id/home_iwant_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="萧涵"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/home_iwant_property_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/home_iwant_name_tv"
+            android:background="#00000000"
+            android:padding="1dp"
+            android:text="女汉子女流氓"
+            android:textColor="#949494"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/register_success_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/home_iwant_property_tv"
+            android:layout_marginRight="5dp"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/home_iwant_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/home_iwant_property_tv"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="我最近想买一个自行车，周六周末的时候骑着单车四处走走玩玩，所以想买一个价格适中的二手的山地车。"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seekRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_below="@+id/relativeLayout1" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <SeekBar
+            android:id="@+id/home_iwant_people_sb"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/textView4"
+            android:max="5"
+            android:visibility="gone"
+            android:maxHeight="3px"
+            android:minHeight="3px"
+            android:thumbOffset="0px" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_marginLeft="2dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/home_iwant_people_sb"
+            android:text="5"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zanRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekRL"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="48"
+            android:textColor="#fb5240"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="12sp"
+            android:layout_height="12sp"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/textView6"
+           />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/dynamic_content_top_rly"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_alignLeft="@+id/seekRL"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_below="@+id/seekRL"
+        android:visibility="gone"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/register_success_btn1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:background="#cccccc" />
+
+        <Button
+            android:id="@+id/home_iwant_satisfied_butt"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"
+            android:background="@drawable/home_iteam_manzu_btn"
+            android:text="满足"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/home_iwant_tallk_butt"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_alignBaseline="@+id/home_iwant_satisfied_butt"
+            android:layout_alignBottom="@+id/home_iwant_satisfied_butt"
+            android:clickable="true"
+            android:background="@drawable/iwant_home_iteam_liaoliao_btn"
+            android:text="聊聊"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    
+</RelativeLayout>

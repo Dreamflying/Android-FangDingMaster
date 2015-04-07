@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+        <com.utils.widght.XListView
+            android:id="@+id/new_iwant_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:listSelector="@null"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@drawable/new_home_divider" />
+        <LinearLayout 
+            android:id="@+id/down_again"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical"
+            >
+           <ImageView 
+               android:layout_width="40dp"
+                  android:gravity="center"
+               android:layout_height="40dp"
+               /> 
+            <TextView
+               android:layout_width="wrap_content"
+               android:gravity="center"
+               android:layout_height="30dp"
+               android:layout_marginTop="5dp"
+               android:textColor="#BDBDBD"
+               android:textSize="13sp"
+               android:text="加载失败，请点击刷新"
+                ></TextView>
+            
+        </LinearLayout>
+     <Button 
+         android:id="@+id/moveTop"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_gravity="bottom|right"
+         android:background="#e0000000"
+         android:layout_margin="5dp"
+         android:visibility="gone"
+         android:text="顶部"
+         android:textColor="#ffffff"
+         />
+</FrameLayout>

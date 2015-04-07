@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+<RelativeLayout
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="#171613" >
+
+    <LinearLayout
+        android:id="@+id/setup_return_btns"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/back_bttt_yellow"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/add__title_logo_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/logo_s" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dynamic_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/setup_return_btns"
+        android:text="申请"
+        android:textColor="#dfde95"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/save"
+        android:visibility="gone" />
+
+     <ProgressBar
+         android:id="@+id/loading_process"
+         android:layout_width="30dip"
+         android:layout_height="30dip"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="10dip"
+         android:indeterminate="false"
+         android:indeterminateDrawable="@drawable/loading" />
+
+</RelativeLayout>
+
+<ListView
+    android:id="@+id/apply_lv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/relativeLayout1" >
+
+</ListView>
+
+</RelativeLayout>

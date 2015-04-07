@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/in_title"
+        layout="@layout/view_title_public" />
+
+        <GridView
+            android:id="@+id/dynamic_publish_gv"
+            android:layout_width="280dip"
+            android:layout_height="70dip"
+            android:layout_margin="40dip"
+            android:layout_below="@+id/in_title"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:numColumns="4"
+            android:orientation="horizontal" >
+        </GridView>
+
+        <EditText
+            android:id="@+id/dynamic_publish_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dynamic_publish_gv"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="10sp"
+            android:background="@drawable/me_text_bottom_line"
+            android:ems="10"
+            android:hint="说点啥？"
+            android:textColor="#696969"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="200dip"
+            android:layout_height="200dip"
+            android:layout_below="@+id/dynamic_publish_et"
+            android:layout_centerHorizontal="true" >
+
+            <Button
+                android:id="@+id/dynamic_publish_btn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/home_iteam_liaoliao_btn"
+                android:text="发 布"
+                android:textColor="#F4F3FC"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+</RelativeLayout>

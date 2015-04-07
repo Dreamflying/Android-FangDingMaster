@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/message_load_btn"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:textColor="#71a1f7"
+        android:background="@null"
+        android:visibility="gone"
+        android:text="点击查看更多" />
+
+    <RelativeLayout
+        android:id="@+id/message_time_rly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/message_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="#222222"
+            android:text="20:55"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/message_left_content_rly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dip"
+        android:layout_marginRight="30dip" >
+
+        <ImageView
+            android:id="@+id/message_left_head_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/logo_s" />
+
+        <TextView
+            android:id="@+id/message_left_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/message_left_head_iv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/message_left_head_iv"
+            android:gravity="center_vertical|left"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:text="我都说我不认识？"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    
+    <RelativeLayout
+        android:id="@+id/message_right_content_rly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dip"
+        android:layout_marginLeft="30dip" >
+
+        <ImageView
+            android:id="@+id/message_right_head_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/logo_s" />
+
+        <TextView
+            android:id="@+id/message_right_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/message_right_head_iv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/message_right_head_iv"
+            android:gravity="left"
+            android:background="#63B8FF"
+             android:padding="10dp"
+            android:text="其实我也不认识你"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    
+</LinearLayout>
